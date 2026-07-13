@@ -1,0 +1,932 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "Overide switches input lines",
+        "description": "Connects CN13 of CRX-CB-CCP03 to various toggle switches",
+        "part_number": "CRX-CCP-L014",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/03",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "Overide switches input lines",
+        "part_number_data": "CRX-CCP-L014",
+        "description_block_data": "Connects CN13 of CRX-CB-CCP03 to various toggle switches",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/03"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/03",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::534-216": "RS components",
+          "connector::430251608": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem",
+          "contact::43030-0001": "Molex"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.06289754385103537,
+            0.25300175526887536,
+            0.6841007008800893
+          ]
+        },
+        "bill_of_materials_summary": {
+          "column_fractions": [
+            0.06581399059765063,
+            0.09770096601161174,
+            0.1771741398568781,
+            0.0998883010715732,
+            0.11228319974468824,
+            0.4471394027175981
+          ]
+        },
+        "wiring_summary": {
+          "column_fractions": [
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.14285714285714285,
+            0.0820981863390632,
+            0.20361609937522254
+          ]
+        },
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430251608",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        136.06904842151886,
+        124.94256017991334
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4",
+        ".5",
+        ".6",
+        ".7",
+        ".8",
+        ".9",
+        ".10",
+        ".11",
+        ".12",
+        ".13",
+        ".14",
+        ".15",
+        ".16"
+      ],
+      "label_offset_mm": [
+        3.9524714828897323,
+        4.283049441742147
+      ],
+      "contact_count": 16
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        49.00318809776823,
+        160.56748140276298
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.45304289318561,
+        142.2157916179988
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L3",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.55771730340854,
+        122.23199558189837
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L4",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.515608945263146,
+        101.18497333957156
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L5",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.74348986717824,
+        81.253655045136
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L6",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.78367263286088,
+        62.23140789578235
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L7",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.726353475047475,
+        43.03248332884014
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L8",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.36862343783732,
+        22.971113180051795
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L9",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        111.71115779283348,
+        49.03886200981874
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "label_offset_mm": [
+        -6.674296210490997,
+        -0.43766393233196066
+      ],
+      "contact_count": 0
+    },
+    {
+      "id": "L10",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        132.52497343251858,
+        48.95324123273114
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "label_offset_mm": [
+        -7.151031654097504,
+        -0.19929621052870755
+      ],
+      "contact_count": 0
+    },
+    {
+      "id": "L11",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        162.62155008793042,
+        49.03596616936883
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "label_offset_mm": [
+        -6.435928488687767,
+        0.03907151127453807
+      ],
+      "contact_count": 0
+    },
+    {
+      "id": "L12",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        183.12914809107514,
+        49.19935397012169
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "label_offset_mm": [
+        -7.62776709770401,
+        -0.19929621052870755
+      ],
+      "contact_count": 0
+    },
+    {
+      "id": "L13",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        223.22635494155145,
+        123.10492254627711
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L14",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        223.6917237817753,
+        142.2033370547083
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    }
+  ],
+  "junctions": [
+    {
+      "id": "J1",
+      "position_mm": [
+        224.28113758538538,
+        86.74296210491002
+      ]
+    },
+    {
+      "id": "J2",
+      "position_mm": [
+        224.01988123210913,
+        105.33564440556358
+      ]
+    }
+  ],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W1",
+      "length": "110 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "connector",
+      "to_id": "L4",
+      "wire_id": "W2",
+      "length": "135 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "connector",
+      "to_id": "L6",
+      "wire_id": "W3",
+      "length": "70 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "connector",
+      "to_id": "L8",
+      "wire_id": "W4",
+      "length": "115 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.5",
+      "to_type": "connector",
+      "to_id": "L10",
+      "wire_id": "W5",
+      "length": "110 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.6",
+      "to_type": "connector",
+      "to_id": "L12",
+      "wire_id": "W6",
+      "length": "70 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.7",
+      "to_type": "junction",
+      "to_id": "J2",
+      "wire_id": "W7",
+      "length": "115 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.8",
+      "to_type": "connector",
+      "to_id": "L14",
+      "wire_id": "W8",
+      "length": "105 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.9",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W9",
+      "length": "115 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.10",
+      "to_type": "connector",
+      "to_id": "L3",
+      "wire_id": "W10",
+      "length": "140 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.11",
+      "to_type": "connector",
+      "to_id": "L5",
+      "wire_id": "W11",
+      "length": "75 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.12",
+      "to_type": "connector",
+      "to_id": "L7",
+      "wire_id": "W12",
+      "length": "120 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.13",
+      "to_type": "connector",
+      "to_id": "L9",
+      "wire_id": "W13",
+      "length": "105 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.14",
+      "to_type": "connector",
+      "to_id": "L11",
+      "wire_id": "W14",
+      "length": "75 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.15",
+      "to_type": "junction",
+      "to_id": "J1",
+      "wire_id": "W15",
+      "length": "125 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.16",
+      "to_type": "connector",
+      "to_id": "L13",
+      "wire_id": "W16",
+      "length": "110 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Auto_lay_ovr_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Breech_open_ovr_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Loader_ovr_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Load_control_ovr_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W5",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Gunner_sel_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W6",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Gunner_ovr_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W7",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Fire_main_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W8",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Commander_sel_sw_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W9",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Auto_lay_ovr_sw_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W10",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Breech_open_ovr_sw_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W11",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Loader_ovr_sw_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W12",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Load_control_ovr_sw_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W13",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Gunner_sel_sw_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W14",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Gunner_ovr_sw_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W15",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Fire_main_sw_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W16",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Commander_sel_sw_NO",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "c0763889164b443e8f702950ecec1284",
+      "number": "1",
+      "description": "Connects to CN13 of CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        116.26430279591709,
+        152.88026838877914
+      ]
+    },
+    {
+      "id": "57b6bf9143bf4e92a6c12dc894fb8c80",
+      "number": "2",
+      "description": "Connect even numbered lugs to the common (COM) pin of the toggle switches",
+      "relations": "L2, L4, L6, L8, L10, L12, L14, L16",
+      "visible": true,
+      "position_mm": [
+        17.814635398692975,
+        140.58545644310328
+      ]
+    },
+    {
+      "id": "e03ef40aabd04927b46dd04fcbbead2b",
+      "number": "3",
+      "description": "Connect odd numbered lugs to the common nominally opne (NO) pin of the toggle switches",
+      "relations": "L1, L3, L5, L7, L9, L11, L13, L15",
+      "visible": true,
+      "position_mm": [
+        17.547656887548445,
+        160.13160963096982
+      ]
+    },
+    {
+      "id": "84eefc0d3d664cfe88ed978c45fe038c",
+      "number": "4",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12, W13, W14, W15, W16",
+      "visible": true,
+      "position_mm": [
+        152.91191208245328,
+        108.64418172146779
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        26.27842717066817,
+        15.739669021758836
+      ],
+      "size_mm": [
+        20.250003368946235,
+        20.250003368946235
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.652580806406974,
+        36.80982995188643
+      ],
+      "size_mm": [
+        20.34256715449009,
+        20.34256715449009
+      ]
+    },
+    {
+      "id": "image_3",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.652580806406974,
+        55.37660542496914
+      ],
+      "size_mm": [
+        20.34256715449009,
+        20.34256715449009
+      ]
+    },
+    {
+      "id": "image_4",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.443965351653222,
+        74.7778427170668
+      ],
+      "size_mm": [
+        20.157439583402407,
+        20.157439583402407
+      ]
+    },
+    {
+      "id": "image_5",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.65258080640694,
+        94.80492637342569
+      ],
+      "size_mm": [
+        20.250003368946235,
+        20.250003368946235
+      ]
+    },
+    {
+      "id": "image_6",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.65258080640694,
+        115.66647184879955
+      ],
+      "size_mm": [
+        20.34256715449009,
+        20.34256715449009
+      ]
+    },
+    {
+      "id": "image_7",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.652580806406974,
+        135.48494005040467
+      ],
+      "size_mm": [
+        20.250003368946235,
+        20.250003368946235
+      ]
+    },
+    {
+      "id": "image_8",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.65258080640694,
+        153.4258691592262
+      ],
+      "size_mm": [
+        20.303434158127335,
+        20.303434158127335
+      ]
+    },
+    {
+      "id": "image_11",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        233.37510894816617,
+        115.75415056470108
+      ],
+      "size_mm": [
+        20.605797400769926,
+        20.605797400769926
+      ]
+    },
+    {
+      "id": "image_12",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        233.2023328213981,
+        134.24119612887534
+      ],
+      "size_mm": [
+        20.605797400769926,
+        20.605797400769926
+      ]
+    },
+    {
+      "id": "image_13",
+      "source": "images/lug_90.png",
+      "page": "schematic",
+      "position_mm": [
+        174.121688419552,
+        25.06892591379886
+      ],
+      "size_mm": [
+        22.001068070404,
+        22.001068070404
+      ]
+    },
+    {
+      "id": "image_14",
+      "source": "images/lug_90.png",
+      "page": "schematic",
+      "position_mm": [
+        153.7518570587926,
+        24.90058020007357
+      ],
+      "size_mm": [
+        22.001068070404,
+        22.001068070404
+      ]
+    },
+    {
+      "id": "image_15",
+      "source": "images/lug_90.png",
+      "page": "schematic",
+      "position_mm": [
+        123.95466572941731,
+        25.405617341249425
+      ],
+      "size_mm": [
+        22.001068070404,
+        22.001068070404
+      ]
+    },
+    {
+      "id": "image_16",
+      "source": "images/lug_90.png",
+      "page": "schematic",
+      "position_mm": [
+        103.07979722748212,
+        24.90058020007357
+      ],
+      "size_mm": [
+        22.001068070404,
+        22.001068070404
+      ]
+    },
+    {
+      "id": "image_9",
+      "source": "images/430251608_90.jpg",
+      "page": "schematic",
+      "position_mm": [
+        124.35931558935354,
+        135.31488100569115
+      ],
+      "size_mm": [
+        28.657794676806095,
+        36.38987632408139
+      ]
+    }
+  ],
+  "connection_label_offsets": {
+    "connector:L1|contact:P1.9": [
+      -8.74705900878013,
+      -1.5362897627699243
+    ],
+    "connector:L2|contact:P1.1": [
+      -8.342870263113761,
+      -3.17377237341834
+    ],
+    "connector:L3|contact:P1.10": [
+      -8.798878078737374,
+      -4.987439821921334
+    ],
+    "connector:L4|contact:P1.2": [
+      -8.498327472985446,
+      -7.4022084819281835
+    ],
+    "connector:L5|contact:P1.11": [
+      -9.379251662258321,
+      -10.666809889233544
+    ],
+    "connector:L6|contact:P1.3": [
+      -16.696104340218962,
+      -17.734931031399487
+    ],
+    "connector:L7|contact:P1.12": [
+      -18.191635772109947,
+      -23.85507048689837
+    ],
+    "connector:L8|contact:P1.4": [
+      -9.39997929024123,
+      -20.222246389346466
+    ],
+    "connector:L9|contact:P1.13": [
+      -6.632840954525224,
+      0.8784788972369107
+    ],
+    "connector:L10|contact:P1.5": [
+      6.632840954525209,
+      1.2930314568947343
+    ],
+    "connector:L11|contact:P1.14": [
+      -4.145525596578267,
+      -5.3398094976304895
+    ],
+    "connector:L12|contact:P1.6": [
+      9.534708872130006,
+      -5.132533217801578
+    ],
+    "contact:P1.15|junction:J1": [
+      -3.7309730369204432,
+      -4.510704378314842
+    ],
+    "contact:P1.7|junction:J2": [
+      -1.0363813991445592,
+      -3.6815992589991797
+    ],
+    "connector:L13|contact:P1.16": [
+      0.6218288394867355,
+      -3.474322979170268
+    ],
+    "connector:L14|contact:P1.8": [
+      0.20727627982891184,
+      -4.096151818657003
+    ]
+  },
+  "preferences": {},
+  "wire_settings": {}
+}

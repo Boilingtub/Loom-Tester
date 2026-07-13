@@ -1,0 +1,241 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "LED dimming and test buttons control lines",
+        "description": "Connects CN5 of CRX-CB-CCP03 to the test and dim buttons",
+        "part_number": "CRX-CCP-L019",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/05",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "LED dimming and test buttons control lines",
+        "description_block_data": "Connects CN5 of CRX-CB-CCP03 to the test and dim buttons",
+        "part_number_data": "CRX-CCP-L019",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/05"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/05",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::430250408": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {},
+        "bill_of_materials_summary": {},
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        69.7683315621679,
+        98.07438894792773
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    }
+  ],
+  "junctions": [
+    {
+      "id": "J1",
+      "position_mm": [
+        198.95749202975554,
+        46.82784272051009
+      ]
+    },
+    {
+      "id": "J2",
+      "position_mm": [
+        199.07332624867166,
+        65.44952178533474
+      ]
+    },
+    {
+      "id": "J3",
+      "position_mm": [
+        198.557917109458,
+        113.10839532412326
+      ]
+    },
+    {
+      "id": "J4",
+      "position_mm": [
+        198.35812964930926,
+        133.62380446333688
+      ]
+    }
+  ],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "junction",
+      "to_id": "J1",
+      "wire_id": "W1",
+      "length": "130 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "junction",
+      "to_id": "J3",
+      "wire_id": "W2",
+      "length": "140 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "junction",
+      "to_id": "J2",
+      "wire_id": "W3",
+      "length": "130 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "junction",
+      "to_id": "J4",
+      "wire_id": "W4",
+      "length": "140 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "DIM_BUT_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "TEST_BUT_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "DIM_BUT_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "TEST_BUT_NO",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "f1097a377657469a82b4d83c2f14d48c",
+      "number": "1",
+      "description": "Connects to CN5 of CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        60.93092454835281,
+        116.96174282678001
+      ]
+    },
+    {
+      "id": "5f1522d40c584481a9154ab24519c37d",
+      "number": "2",
+      "description": "Connects to the one any of the pins the buttons",
+      "relations": "J1, J3",
+      "visible": true,
+      "position_mm": [
+        211.54835281615303,
+        45.315621679064826
+      ]
+    },
+    {
+      "id": "f8f0c6310c3e4258b55b53177d6a6398",
+      "number": "3",
+      "description": "Connects to the other pin of the buttons",
+      "relations": "J2, J4",
+      "visible": true,
+      "position_mm": [
+        210.3517534537726,
+        63.62167906482464
+      ]
+    },
+    {
+      "id": "9e2312beec264651855ef6a528c53f3a",
+      "number": "4",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        109.73432518597237,
+        94.86822529224231
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        12.351222104144549,
+        93.33241521901002
+      ],
+      "size_mm": [
+        52.66684378320933,
+        15.764225350076263
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {}
+}

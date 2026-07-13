@@ -1,0 +1,238 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "CCP05 input connector",
+        "description": "Connects CN20 of CRX-CB-CCP03 to CN1 of CRX-CB-CCP05",
+        "part_number": "CRX-CCP-L020",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/05",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "CCP05 input connector",
+        "description_block_data": "Connects CN20 of CRX-CB-CCP03 to CN1 of CRX-CB-CCP05",
+        "part_number_data": "CRX-CCP-L020",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/05"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/05",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::430250408": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {},
+        "bill_of_materials_summary": {},
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        68.50584484590858,
+        98.07438894792772
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    },
+    {
+      "id": "P2",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        198.8663237749993,
+        98.58732117073286
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "contact",
+      "to_id": "P2.1",
+      "wire_id": "W1",
+      "length": "350 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "contact",
+      "to_id": "P2.2",
+      "wire_id": "W2",
+      "length": "350 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "contact",
+      "to_id": "P2.3",
+      "wire_id": "W3",
+      "length": "350 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "contact",
+      "to_id": "P2.4",
+      "wire_id": "W4",
+      "length": "350 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "GND",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "DIM_OUT",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "5V+",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "46b22c4e42734aac94a0b5453c3d5c30",
+      "number": "1",
+      "description": "Connects to CN20 or CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        36.640847874852945,
+        110.67060676243459
+      ]
+    },
+    {
+      "id": "d56945fb127343d8bf31e88c9b916d04",
+      "number": "2",
+      "description": "Connects to CN1 of CRX-CB-CCP05",
+      "relations": "P2",
+      "visible": true,
+      "position_mm": [
+        232.4582126557924,
+        113.25315871376633
+      ]
+    },
+    {
+      "id": "83565737d2e64d19b0cb5558126c6983",
+      "number": "3",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        83.32042393742647,
+        89.64125515873366
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        12.029510606266696,
+        92.7072616796934
+      ],
+      "size_mm": [
+        56.686562369630906,
+        16.967406423562988
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/430250408.jpg",
+      "page": "schematic",
+      "position_mm": [
+        208.05009743583838,
+        93.73554414594523
+      ],
+      "size_mm": [
+        52.35122210414448,
+        17.099334083720567
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {}
+}

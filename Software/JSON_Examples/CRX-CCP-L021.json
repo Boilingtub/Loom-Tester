@@ -1,0 +1,400 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "Smokes switches control lines",
+        "description": "Connects CN7 of CRX-CB-CCP03 to the smokes switch and buttons",
+        "part_number": "CRX-CCP-L021",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/05",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "Smokes switches control lines",
+        "description_block_data": "Connects CN7 of CRX-CB-CCP03 to the smokes switch and buttons",
+        "part_number_data": "CRX-CCP-L021",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/05"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/05",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::430250608": "Molex",
+          "contact::43030-0001": "Molex",
+          "connector::534-216": "RS Components",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.06586667879604859,
+            0.19158358729226713,
+            0.7425497339116842
+          ]
+        },
+        "bill_of_materials_summary": {
+          "column_fractions": [
+            0.09230504854607272,
+            0.113012311431342,
+            0.18835385238556993,
+            0.10450600842038071,
+            0.07898709938749714,
+            0.42283567982913745
+          ]
+        },
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250608",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        71.34643995749201,
+        104.70244420828905
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4",
+        ".5",
+        ".6"
+      ],
+      "contact_count": 6
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        206.77917981072557,
+        125.57097791798105
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        207.1072555205048,
+        145.24605678233442
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0,
+      "label_offset_mm": [
+        0.0,
+        6.474999999962305
+      ]
+    }
+  ],
+  "junctions": [
+    {
+      "id": "J1",
+      "position_mm": [
+        196.4511041009464,
+        27.49526813880126
+      ]
+    },
+    {
+      "id": "J2",
+      "position_mm": [
+        196.77602523659309,
+        49.044164037854884
+      ]
+    },
+    {
+      "id": "J3",
+      "position_mm": [
+        197.41324921135646,
+        79.96214511041008
+      ]
+    },
+    {
+      "id": "J4",
+      "position_mm": [
+        197.42586750788647,
+        100.88643533123027
+      ]
+    }
+  ],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "junction",
+      "to_id": "J3",
+      "wire_id": "W1",
+      "length": "170 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "junction",
+      "to_id": "J1",
+      "wire_id": "W2",
+      "length": "220 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W3",
+      "length": "260 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "junction",
+      "to_id": "J4",
+      "wire_id": "W4",
+      "length": "170 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.5",
+      "to_type": "junction",
+      "to_id": "J2",
+      "wire_id": "W5",
+      "length": "220 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.6",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W6",
+      "length": "260 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Fire2_GND",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Fire1_GND",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Arm_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Fire2_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W5",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Fire1_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W6",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Arm_NO",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "12d78095fb804192bac96cf8f3021402",
+      "number": "1",
+      "description": "Connect to CN7 of CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        37.80757097791799,
+        122.7634069400631
+      ]
+    },
+    {
+      "id": "84dc9aa876d94728a5432bb1ab3e279f",
+      "number": "2",
+      "description": "Connect to pin 1 of the fire smokes buttons",
+      "relations": "J1, J3",
+      "visible": true,
+      "position_mm": [
+        206.15457413249212,
+        25.63722397476341
+      ]
+    },
+    {
+      "id": "b6502a16074b4b5c8e96731e8a4a70a2",
+      "number": "3",
+      "description": "Connect to pin 2 of the fire smokes buttons",
+      "relations": "J2, J4",
+      "visible": true,
+      "position_mm": [
+        207.10725552050476,
+        47.81072555205047
+      ]
+    },
+    {
+      "id": "76974f7cd1d34c75b9a8e4d919627cb0",
+      "number": "4",
+      "description": "Connect to the COM pin of the smokes arm toggle switch",
+      "relations": "L1",
+      "visible": true,
+      "position_mm": [
+        242.41324921135646,
+        124.94952681388011
+      ]
+    },
+    {
+      "id": "b12f920b44c9419180b0cf23fc5ed81e",
+      "number": "5",
+      "description": "Connect to the bottom NO pin of the smokes arm toggle switch",
+      "relations": "L2",
+      "visible": true,
+      "position_mm": [
+        242.4290220820189,
+        145.56151419558364
+      ]
+    },
+    {
+      "id": "b2cd4e00ac9e465cb3ad9106c9522f79",
+      "number": "6",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4, W5, W6",
+      "visible": true,
+      "position_mm": [
+        85.3564668769716,
+        86.22397476340694
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250608_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        16.138682252922422,
+        95.46453278234792
+      ],
+      "size_mm": [
+        56.76992561105204,
+        23.482824382287554
+      ]
+    },
+    {
+      "id": "image_4",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        214.3832807570978,
+        134.0315457413249
+      ],
+      "size_mm": [
+        26.402208201892773,
+        26.402208201892773
+      ]
+    },
+    {
+      "id": "image_5",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        213.75867507886426,
+        114.66876971608828
+      ],
+      "size_mm": [
+        26.402208201892773,
+        26.402208201892773
+      ]
+    }
+  ],
+  "connection_label_offsets": {
+    "connector:L1|contact:P1.3": [
+      -0.37430035585194676,
+      3.212881020264274
+    ],
+    "connector:L2|contact:P1.6": [
+      -1.1229010675558402,
+      3.4000311981902476
+    ],
+    "contact:P1.4|junction:J4": [
+      0.18715017792595834,
+      3.4000311981902476
+    ],
+    "contact:P1.1|junction:J3": [
+      0.5614505337779051,
+      3.587181376116221
+    ],
+    "contact:P1.5|junction:J2": [
+      0.5614505337779352,
+      4.89723262159802
+    ],
+    "contact:P1.2|junction:J1": [
+      0.0,
+      5.0843827995240085
+    ]
+  },
+  "preferences": {
+    "schematic_legend_visible": true
+  },
+  "wire_settings": {}
+}

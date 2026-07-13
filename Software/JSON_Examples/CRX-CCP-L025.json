@@ -1,0 +1,285 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "Utillity socket power supply",
+        "description": "Internal utillity socket wires",
+        "part_number": "CRX-CCP-L025",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/07/07",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "Utillity socket power supply",
+        "part_number_data": "CRX-CCP-L025",
+        "description_block_data": "Internal utillity socket wires",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/07/07"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/07/07",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::534-216": "RS components",
+          "connector::ca3102e12s-3sbf80": "Cannon ITT",
+          "contact::031-8556-110": "Cannon ITT",
+          "connector::430200201": "Molex",
+          "contact::0430310001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {},
+        "bill_of_materials_summary": {},
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "CA3102E12S-3SBF80",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        67.85110410094637,
+        106.89526813880127
+      ],
+      "contacts": [
+        "031-8556-110",
+        "031-8556-110"
+      ],
+      "contact_suffixes": [
+        ".A",
+        ".B"
+      ],
+      "contact_count": 2
+    },
+    {
+      "id": "P2",
+      "part_number": "430200201",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        201.90725552050475,
+        149.61829652996843
+      ],
+      "contacts": [
+        "0430310001",
+        "0430310001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2"
+      ],
+      "contact_count": 2
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        199.1747634069401,
+        80.28706624605678
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        200.00252365930604,
+        107.83217665615142
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.A",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W1",
+      "length": "130 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.A",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W2",
+      "length": "130 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.B",
+      "to_type": "contact",
+      "to_id": "P2.1",
+      "wire_id": "W3",
+      "length": "130 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.B",
+      "to_type": "contact",
+      "to_id": "P2.2",
+      "wire_id": "W4",
+      "length": "130 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V-",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V-",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "abe0dc1c3e8e48c19d0342603bcbe373",
+      "number": "1",
+      "description": "Utillity socket",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        47.801261829652994,
+        122.76340694006309
+      ]
+    },
+    {
+      "id": "c6063a6d4043465aa7a05c2045adac00",
+      "number": "2",
+      "description": "Connect to the 28V- connector",
+      "relations": "P2",
+      "visible": true,
+      "position_mm": [
+        201.34511041009463,
+        163.23785488958984
+      ]
+    },
+    {
+      "id": "96377518eaa4403e952a0dd3da841a66",
+      "number": "3",
+      "description": "Connect to the output of the circuit breaker",
+      "relations": "L1, L2",
+      "visible": true,
+      "position_mm": [
+        214.35268138801257,
+        120.88958990536278
+      ]
+    },
+    {
+      "id": "22d82117690041699c6b48ffca79cef7",
+      "number": "4",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        131.9829652996845,
+        86.22397476340693
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/12S-3.png",
+      "page": "schematic",
+      "position_mm": [
+        39.86845425867506,
+        99.41521205748337
+      ],
+      "size_mm": [
+        22.904416403785486,
+        21.631948825797398
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        207.38769716088325,
+        96.99242902208199
+      ],
+      "size_mm": [
+        26.27728706624607,
+        26.27728706624607
+      ]
+    },
+    {
+      "id": "image_3",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        207.01293375394323,
+        69.44731861198737
+      ],
+      "size_mm": [
+        26.089905362776047,
+        26.089905362776047
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {}
+}

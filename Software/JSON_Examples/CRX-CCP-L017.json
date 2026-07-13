@@ -1,0 +1,242 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "Barrel fan switch lines",
+        "description": "Connects CN14 of CRX-CB-CCP03 to the barrel fan toggle switch",
+        "part_number": "CRX-CCP-L017",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/03",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "Barrel fan switch lines",
+        "part_number_data": "CRX-CCP-L017",
+        "description_block_data": "Connects CN14 of CRX-CB-CCP03 to the barrel fan toggle switch",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/03"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/04",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::534-216": "RS Components",
+          "connector::430251608": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem",
+          "connector::430250408": "Molex"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.08306007765561099,
+            0.13017859136525836,
+            0.7867613309791307
+          ]
+        },
+        "bill_of_materials_summary": {},
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        72.16088328075709,
+        99.21261829652997
+      ],
+      "contacts": [
+        "",
+        "",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        200.03343848580442,
+        65.4839116719243
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        199.3621451104101,
+        130.8801261829653
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W1",
+      "length": "100 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W2",
+      "length": "90 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "BAR_FAN_SW_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "BAR_FAN_SW_COM",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "1dc763a079b94d67b7de1daafc237c0d",
+      "number": "1",
+      "description": "Connects to CN14 or CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        37.57492029755579,
+        113.80552603613177
+      ]
+    },
+    {
+      "id": "628369bbba19487dbf378b4a6de7355e",
+      "number": "2",
+      "description": "Connect to COM pin of the barrel fan toggle switch",
+      "relations": "L1",
+      "visible": true,
+      "position_mm": [
+        212.8108395324123,
+        78.45589798087141
+      ]
+    },
+    {
+      "id": "0aa87de35c8f47ae8991ed1ee445ff30",
+      "number": "3",
+      "description": "Connect to the bottom NO pin of the barrel fan toggle switch",
+      "relations": "L2",
+      "visible": true,
+      "position_mm": [
+        212.56110520722638,
+        142.52709883103077
+      ]
+    },
+    {
+      "id": "2bca02a9a14e4f31844375dd44a353b1",
+      "number": "4",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2",
+      "visible": true,
+      "position_mm": [
+        100.26567481402763,
+        98.97130712008502
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        12.94794952681386,
+        92.89246979548919
+      ],
+      "size_mm": [
+        59.50630914826501,
+        17.81141226206572
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        205.51388012618295,
+        119.85299684542588
+      ],
+      "size_mm": [
+        26.652050473186115,
+        26.652050473186115
+      ]
+    },
+    {
+      "id": "image_3",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        206.63817034700318,
+        54.45678233438485
+      ],
+      "size_mm": [
+        26.652050473186115,
+        26.652050473186115
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {}
+}

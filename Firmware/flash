@@ -1,0 +1,6 @@
+#!/bin/sh
+#st-info --descr
+#st-flash erase
+pkill openocd
+pkill -f arm-none-eabi-gdb
+st-flash write ./build/loom_tester.bin 0x08000000

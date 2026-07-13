@@ -1,0 +1,255 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "MESIT alarm and PT100 Temperature Comms",
+        "description": "Connects CN4 of CRX-CB-CCP01 to CN6 of CRX-CB-CCP03",
+        "part_number": "CRX-CCP-L006",
+        "revision": "A",
+        "drawn_by": "HJ Du Plessis",
+        "drawn_date": "2026/05/20",
+        "reviewed_by": "HJ le Roux",
+        "reviewed_date": "2026/05/25",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "MESIT alarm and PT100 Temperature Comms",
+        "description_block_data": "Connects CN4 of CRX-CB-CCP01 to CN6 of CRX-CB-CCP03",
+        "part_number_data": "CRX-CCP-L006",
+        "drawn_by_date_cell": "2026/05/20",
+        "drawn_by_name_cell": "HJ Du Plessis",
+        "reviewed_by_name_cell": "HJ le Roux",
+        "reviewed_by_date_cell": "2026/05/25"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/05/20",
+          "author": "HJ Du Plessis",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::430250408": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {
+          "column_fractions": [
+            0.09251504259390189,
+            0.10425741252552422,
+            0.12040996939567586,
+            0.682817575484898
+          ]
+        },
+        "notes_summary": {
+          "column_fractions": [
+            0.0768328734322018,
+            0.15343613797853975,
+            0.7697309885892585
+          ]
+        },
+        "bill_of_materials_summary": {},
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        94.5975,
+        94.69750000000002
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    },
+    {
+      "id": "P2",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        199.85408016518483,
+        94.74525950444554
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "contact",
+      "to_id": "P2.2",
+      "wire_id": "W1",
+      "length": "190 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "contact",
+      "to_id": "P2.1",
+      "wire_id": "W2",
+      "length": "190 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "contact",
+      "to_id": "P2.3",
+      "wire_id": "W4",
+      "length": "190 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "contact",
+      "to_id": "P2.4",
+      "wire_id": "W3",
+      "length": "190 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Alarm_Signal",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "UART_TX",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "UART_RX",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "GND",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "d7e05c87c1064289974040371b3599c4",
+      "number": "1",
+      "description": "Connect to CN4 of CRX-CB-CCP01",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        49.30500000000001,
+        111.57749999999999
+      ]
+    },
+    {
+      "id": "fd777ab7de9943b1b3be028a3c101e93",
+      "number": "2",
+      "description": "Connect to CN6 of CRX-CB-CCP03",
+      "relations": "P2",
+      "visible": true,
+      "position_mm": [
+        239.3875,
+        109.84499999999996
+      ]
+    },
+    {
+      "id": "d3d10c49b83845c8ab487d3b3458185a",
+      "number": "3",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        147.82597164904385,
+        107.49100708773902
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408.jpg",
+      "page": "schematic",
+      "position_mm": [
+        206.95750000000004,
+        87.57745562130174
+      ],
+      "size_mm": [
+        68.7205923340354,
+        22.44601595762575
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/430250408_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        18.362499999999976,
+        85.89610544217686
+      ],
+      "size_mm": [
+        74.94500000000002,
+        22.432517006802737
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {
+    "show_color_column": false
+  }
+}

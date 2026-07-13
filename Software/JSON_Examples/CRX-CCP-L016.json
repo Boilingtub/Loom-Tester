@@ -1,0 +1,344 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "Turret power and scale light switch control lines",
+        "description": "Connects CN9 of CRX-CB-CCP03 to to the the scale light and power switches",
+        "part_number": "CRX-CCP-L016",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/03",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "part_number_data": "CRX-CCP-L016",
+        "title_block_data": "Turret power and scale light switch control lines",
+        "description_block_data": "Connects CN9 of CRX-CB-CCP03 to to the the scale light and power switches",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/03"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/04",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::534-216": "RS Components",
+          "connector::430250408": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.08477089445064995,
+            0.18081969829014716,
+            0.7344094072592029
+          ]
+        },
+        "bill_of_materials_summary": {},
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        68.60063091482651,
+        99.96214511041009
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        173.79999999999998,
+        49.55646687697161
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        173.8782334384857,
+        73.72870662460568
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L3",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        173.39432176656152,
+        122.63533123028392
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L4",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        173.47255520504734,
+        144.93375394321768
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W1",
+      "length": "165 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "connector",
+      "to_id": "L3",
+      "wire_id": "W2",
+      "length": "195 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W3",
+      "length": "170 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "connector",
+      "to_id": "L4",
+      "wire_id": "W4",
+      "length": "200 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "TUR_POW_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "SCALE_LIGHTS_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "TUR_POW_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "SCALE_LIGHTS_NO",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "57e031a1786d4d90a70c60c009ef62cb",
+      "number": "1",
+      "description": "Connects to CN9 of CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        33.747634069400625,
+        112.45741324921136
+      ]
+    },
+    {
+      "id": "69142c91a47f4367bca6bd20693c4dee",
+      "number": "2",
+      "description": "Connects to the COM contact of the toggle switches",
+      "relations": "L1, L3",
+      "visible": true,
+      "position_mm": [
+        209.58990536277605,
+        48.5602523659306
+      ]
+    },
+    {
+      "id": "d281d06564664214957435e74720947c",
+      "number": "3",
+      "description": "Connects to the bottom NO contact of the toggle switches",
+      "relations": "L2, L4",
+      "visible": true,
+      "position_mm": [
+        209.4807570977918,
+        73.48201892744481
+      ]
+    },
+    {
+      "id": "a0c7eef52bc6403495ec2a82b34b6eb3",
+      "number": "4",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        96.56782334384856,
+        98.96593059936909
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        16.44574132492113,
+        94.89120796583617
+      ],
+      "size_mm": [
+        50.449526813880134,
+        15.100538638168203
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        180.2173501577287,
+        134.65615141955834
+      ],
+      "size_mm": [
+        24.778233438485803,
+        24.778233438485803
+      ]
+    },
+    {
+      "id": "image_3",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        180.21735015772867,
+        112.17034700315459
+      ],
+      "size_mm": [
+        24.778233438485803,
+        24.778233438485803
+      ]
+    },
+    {
+      "id": "image_4",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        181.3416403785489,
+        63.6384858044164
+      ],
+      "size_mm": [
+        24.59085173501578,
+        24.59085173501578
+      ]
+    },
+    {
+      "id": "image_5",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        181.71640378548898,
+        39.09148264984228
+      ],
+      "size_mm": [
+        24.59085173501578,
+        24.59085173501578
+      ]
+    }
+  ],
+  "connection_label_offsets": {
+    "connector:L3|contact:P1.2": [
+      3.372870662460554,
+      -3.910633543669696
+    ],
+    "connector:L4|contact:P1.4": [
+      2.4359621451103965,
+      -3.7232518401996586
+    ],
+    "connector:L1|contact:P1.1": [
+      -3.1854889589905464,
+      -4.472778654079779
+    ],
+    "connector:L2|contact:P1.3": [
+      -2.623343848580434,
+      -4.098015247139734
+    ]
+  },
+  "preferences": {},
+  "wire_settings": {}
+}

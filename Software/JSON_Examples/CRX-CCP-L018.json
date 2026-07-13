@@ -1,0 +1,336 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "FESS switch control lines",
+        "description": "Connects CN11 of CRX-CB-CCP03 to the FESS toggle switches",
+        "part_number": "CRX-CCP-L018",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/05",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "FESS switch control lines",
+        "description_block_data": "Connects CN11 of CRX-CB-CCP03 to the FESS toggle switches",
+        "part_number_data": "CRX-CCP-L018",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/05"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/05",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::534-216": "RS Components",
+          "connector::430250408": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.09288487700393236,
+            0.15842488949168235,
+            0.7486902335043852
+          ]
+        },
+        "bill_of_materials_summary": {
+          "column_fractions": [
+            0.062182379040428025,
+            0.11544139234277628,
+            0.17807448818832516,
+            0.11912569209839685,
+            0.1547405897360618,
+            0.3704354585940119
+          ]
+        },
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        73.87141339001063,
+        105.0180658873539
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        197.97662061636555,
+        51.04675876726885
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        198.35812964930923,
+        74.08714133900106
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L3",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        198.10839532412328,
+        116.69606801275238
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L4",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        198.1742826780021,
+        139.7364505844846
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W1",
+      "length": "90 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "connector",
+      "to_id": "L3",
+      "wire_id": "W2",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W3",
+      "length": "90 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "connector",
+      "to_id": "L4",
+      "wire_id": "W4",
+      "length": "50 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "FESS1_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "FESS2_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "FESS1_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "FESS2_NO",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "d0ae28756245480caa131602685ad1e3",
+      "number": "1",
+      "description": "Connects to CN11 of CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        37.89054197662062,
+        118.53985122210415
+      ]
+    },
+    {
+      "id": "30bc5c62ba524b14a0030e3a7e88076b",
+      "number": "2",
+      "description": "Connects to the COM pin of the FESS toggle switches",
+      "relations": "L1, L3",
+      "visible": true,
+      "position_mm": [
+        235.2199787460148,
+        49.73432518597236
+      ]
+    },
+    {
+      "id": "960c2c07662d4722a916cf30d94080ba",
+      "number": "3",
+      "description": "Connects to the bottom NO pin of the FESS toggle switches",
+      "relations": "L2, L4",
+      "visible": true,
+      "position_mm": [
+        234.97024442082886,
+        73.72157279489905
+      ]
+    },
+    {
+      "id": "dde956d0ffda4071897b50a1b3874f41",
+      "number": "4",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        112.5749202975558,
+        101.8119022316684
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        17.401168969181725,
+        99.01360544217685
+      ],
+      "size_mm": [
+        55.19181721572793,
+        16.519999710830124
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        204.24920297555795,
+        127.2933049946865
+      ],
+      "size_mm": [
+        28.679596174282665,
+        28.679596174282665
+      ]
+    },
+    {
+      "id": "image_3",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        204.5648246546227,
+        104.56854410201915
+      ],
+      "size_mm": [
+        28.679596174282665,
+        28.679596174282665
+      ]
+    },
+    {
+      "id": "image_4",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        205.19606801275236,
+        61.9596174282678
+      ],
+      "size_mm": [
+        28.679596174282665,
+        28.679596174282665
+      ]
+    },
+    {
+      "id": "image_5",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        204.5648246546227,
+        38.603613177470756
+      ],
+      "size_mm": [
+        28.679596174282665,
+        28.679596174282665
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {}
+}

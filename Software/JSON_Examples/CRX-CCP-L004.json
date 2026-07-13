@@ -1,0 +1,262 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "PT100 sensors connection",
+        "description": "Connects CN3 of CRX-CB-CCP01 to CN10 of CRX-CB-CCP04",
+        "part_number": "CRX-CCP-L004",
+        "revision": "A",
+        "drawn_by": "HJ Du Plessis",
+        "drawn_date": "2026/05/20",
+        "reviewed_by": "HJ le Roux",
+        "reviewed_date": "2026/05/27",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "PT100 sensors connection",
+        "description_block_data": "Connects CN3 of CRX-CB-CCP01 to CN10 of CRX-CB-CCP04",
+        "part_number_data": "CRX-CCP-L004",
+        "drawn_by_date_cell": "2026/05/20",
+        "drawn_by_name_cell": "HJ Du Plessis",
+        "reviewed_by_name_cell": "HJ le Roux",
+        "reviewed_by_date_cell": "2026/05/27"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/05/20",
+          "author": "HJ Du Plessis",
+          "description": "PT100 sensors connection"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::430250608": "Molex",
+          "contact::43030-0001": "Molex",
+          "connector::430250408": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.06902041441913583,
+            0.2995565092282667,
+            0.6314230763525974
+          ]
+        },
+        "bill_of_materials_summary": {},
+        "wiring_summary": {
+          "column_fractions": [
+            0.16666666666666666,
+            0.16666666666666666,
+            0.16593245953620525,
+            0.16740087379712815,
+            0.16666666666666666,
+            0.16666666666666666
+          ]
+        },
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250608",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        77.52,
+        102.36999999999999
+      ],
+      "contacts": [
+        "",
+        "43030-0001",
+        "43030-0001",
+        "",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4",
+        ".5",
+        ".6"
+      ],
+      "contact_count": 6
+    },
+    {
+      "id": "P2",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        204.7375,
+        102.1225
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "contact",
+      "to_id": "P2.4",
+      "wire_id": "W1",
+      "length": "240 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "contact",
+      "to_id": "P2.2",
+      "wire_id": "W2",
+      "length": "240 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.5",
+      "to_type": "contact",
+      "to_id": "P2.1",
+      "wire_id": "W3",
+      "length": "240 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.6",
+      "to_type": "contact",
+      "to_id": "P2.3",
+      "wire_id": "W4",
+      "length": "240 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "PT100_1+",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "PT100_1-",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "PT100_2+",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "PT100_2-",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "f860a6bdb0824011a2033d2666148925",
+      "number": "1",
+      "description": "Connect to CN10 of CCP04",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        42.86999999999999,
+        119.25000000000004
+      ]
+    },
+    {
+      "id": "c45cb6895a27445ba18f24ced204c40b",
+      "number": "2",
+      "description": "Connect to CN3 of CCP01",
+      "relations": "P2",
+      "visible": true,
+      "position_mm": [
+        240.3775,
+        116.5275
+      ]
+    },
+    {
+      "id": "99bc10e2c6014f7f9c0675d88d353211",
+      "number": "3",
+      "description": "Wire size 20AWG",
+      "relations": "PT100_1+, PT100_1-, PT100_2+, PT100_2-",
+      "visible": true,
+      "position_mm": [
+        131.78542553191488,
+        109.22578535669587
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408.jpg",
+      "page": "schematic",
+      "position_mm": [
+        212.89749999999998,
+        95.74495562130186
+      ],
+      "size_mm": [
+        61.58000000000001,
+        20.113704142011848
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/430250608_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        10.937500000000004,
+        92.51951949860721
+      ],
+      "size_mm": [
+        61.33249999999999,
+        25.370128830083566
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {
+    "show_color_column": false
+  }
+}

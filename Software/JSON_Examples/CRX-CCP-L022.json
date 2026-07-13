@@ -1,0 +1,336 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "ALS ESTOP and parallel battery lines",
+        "description": "Connects CN12 of CRX-CB-CCP03 to par bat and ALS ESTOP",
+        "part_number": "CRX-CCP-L022",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/05",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "ALS ESTOP and parallel battery lines",
+        "part_number_data": "CRX-CCP-L022",
+        "description_block_data": "Connects CN12 of CRX-CB-CCP03 to par bat and ALS ESTOP",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/05"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/05",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::534-216": "RS Components",
+          "connector::430250608": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.07446337822582975,
+            0.1301785913652584,
+            0.7953580304089118
+          ]
+        },
+        "bill_of_materials_summary": {
+          "column_fractions": [
+            0.0634104789589682,
+            0.11789759217985664,
+            0.17561828835124482,
+            0.11666949226131648,
+            0.09210749389051306,
+            0.43429665435810083
+          ]
+        },
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250608",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        69.13708820403824,
+        99.65249734325185
+      ],
+      "contacts": [
+        "43030-0001",
+        "",
+        "43030-0001",
+        "43030-0001",
+        "",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4",
+        ".5",
+        ".6"
+      ],
+      "contact_count": 6
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        185.97121843779516,
+        113.50284118556822
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "label_offset_mm": [
+        0.5460411974501577,
+        6.691524649623638
+      ],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        186.21296528553887,
+        132.9865305763392
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    }
+  ],
+  "junctions": [
+    {
+      "id": "J1",
+      "position_mm": [
+        186.58863215689058,
+        51.34182854485467
+      ]
+    },
+    {
+      "id": "J2",
+      "position_mm": [
+        186.48898124225553,
+        70.76013536068855
+      ]
+    }
+  ],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "junction",
+      "to_id": "J1",
+      "wire_id": "W1",
+      "length": "155 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W2",
+      "length": "140 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "junction",
+      "to_id": "J2",
+      "wire_id": "W3",
+      "length": "155 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.6",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W4",
+      "length": "150 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "ALS_ESTOP_GND",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "PAR_BAT_COM",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "ALS_ESTOP_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "PAR_BAR_NO",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "89d438de4b754e549d3d0c29d841db2b",
+      "number": "1",
+      "description": "Connects to CN12 of CRX-CB-CCP03",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        35.110080741008915,
+        116.20045832472418
+      ]
+    },
+    {
+      "id": "aecda9ddce6142ed8e6416e3e0280a39",
+      "number": "2",
+      "description": "Connect to the COM pin of the ESTOP button",
+      "relations": "J1",
+      "visible": true,
+      "position_mm": [
+        197.4009166494484,
+        49.76940869160833
+      ]
+    },
+    {
+      "id": "37c476b986de42788eb6fefb0ced5ce1",
+      "number": "3",
+      "description": "Connect to the NO pin of the ALS ESTOP button",
+      "relations": "J2",
+      "visible": true,
+      "position_mm": [
+        197.531857043205,
+        69.86905960624335
+      ]
+    },
+    {
+      "id": "30cf4d1acdc94ce58e045eecc555f000",
+      "number": "4",
+      "description": "Connect to the COM pin of parallel battery switch",
+      "relations": "L1",
+      "visible": true,
+      "position_mm": [
+        224.5758893396086,
+        112.79373783071827
+      ]
+    },
+    {
+      "id": "bfdf97b411414ab49540319e80891c19",
+      "number": "5",
+      "description": "Connect to the bottom NO pin of the parallel battery switch",
+      "relations": "L2",
+      "visible": true,
+      "position_mm": [
+        224.70682973336517,
+        132.89338874535335
+      ]
+    },
+    {
+      "id": "40cce5485b244b65b19c9f2fbf0f3147",
+      "number": "6",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        105.26188078751322,
+        96.78215150889031
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250608_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        13.929330499468653,
+        90.41458591731075
+      ],
+      "size_mm": [
+        55.50743889479276,
+        22.960597982943533
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        193.98544820952208,
+        102.72810476390373
+      ],
+      "size_mm": [
+        25.839001062699232,
+        25.839001062699232
+      ]
+    },
+    {
+      "id": "image_3",
+      "source": "images/lug_right.png",
+      "page": "schematic",
+      "position_mm": [
+        194.22216446882067,
+        122.2651998098385
+      ],
+      "size_mm": [
+        25.839001062699232,
+        25.839001062699232
+      ]
+    }
+  ],
+  "connection_label_offsets": {
+    "contact:P1.1|junction:J1": [
+      1.1292775665399235,
+      3.763704055735364
+    ],
+    "contact:P1.4|junction:J2": [
+      1.1292775665399235,
+      3.3872782002220663
+    ]
+  },
+  "preferences": {},
+  "wire_settings": {}
+}

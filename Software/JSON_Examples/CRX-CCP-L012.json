@@ -1,0 +1,253 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "Breech and runup sensor lines",
+        "description": "Connects CN5 of CRX-CB-CCP04 to CN16 of CRX-CB-CCP03",
+        "part_number": "CRX-CCP-L012",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/03",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "Breech and runup sensor lines",
+        "part_number_data": "CRX-CCP-L012",
+        "description_block_data": "Connects CN5 of CRX-CB-CCP04 to CN16 of CRX-CB-CCP03",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/03"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/03",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::430250408": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.08695822951061138,
+            0.1618627944371479,
+            0.7511789760522407
+          ]
+        },
+        "bill_of_materials_summary": {
+          "column_fractions": [
+            0.06945954903091972,
+            0.10790852962476523,
+            0.16113368275049414,
+            0.12249076335784158,
+            0.09551363095165034,
+            0.4434938442843291
+          ]
+        },
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        91.90407917512753,
+        106.0721491070186
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    },
+    {
+      "id": "P2",
+      "part_number": "430250408",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        208.01347610648128,
+        105.86055446511035
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4"
+      ],
+      "contact_count": 4
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "contact",
+      "to_id": "P2.1",
+      "wire_id": "W1",
+      "length": "125 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "contact",
+      "to_id": "P2.2",
+      "wire_id": "W2",
+      "length": "125 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "contact",
+      "to_id": "P2.3",
+      "wire_id": "W3",
+      "length": "125 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "contact",
+      "to_id": "P2.4",
+      "wire_id": "W4",
+      "length": "125 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Runup_NC",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "GND",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Runup_NO",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "Breech_open",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "7f071cf851814290a39534aa400d5a14",
+      "number": "1",
+      "description": "Connects to CN5 of CRX-CB-CCP04",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        52.04702982836632,
+        119.3803355483032
+      ]
+    },
+    {
+      "id": "2494966435684ea1be9172b9dfe2a8a9",
+      "number": "2",
+      "description": "Connects to CN16 of CRX-CB-CCP03",
+      "relations": "P2",
+      "visible": true,
+      "position_mm": [
+        242.64445235074177,
+        118.5964756501764
+      ]
+    },
+    {
+      "id": "432387d4205b4b828b60a7ef6c286f6a",
+      "number": "3",
+      "description": "Wire size 20AWG",
+      "relations": "W1, W2, W3, W4",
+      "visible": true,
+      "position_mm": [
+        149.9574613227487,
+        97.07797407356064
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/430250408.jpg",
+      "page": "schematic",
+      "position_mm": [
+        217.6380026455809,
+        99.92423579446728
+      ],
+      "size_mm": [
+        53.929330499468634,
+        17.614787240063126
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/430250408_180.jpg",
+      "page": "schematic",
+      "position_mm": [
+        29.262181292055452,
+        100.64756148811158
+      ],
+      "size_mm": [
+        58.83010709404217,
+        17.609011647196294
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {}
+}

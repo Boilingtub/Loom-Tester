@@ -1,0 +1,14 @@
+#!/bin/sh
+if [ "$1" = "open" ]; then
+openocd -f interface/stlink.cfg -f target/stm32h7x.cfg
+fi
+if [ "$1" = "run" ]; then
+arm-none-eabi-gdb ./build/loom_tester.elf -ex "target extended-remote localhost:3333"
+fi
+if [ "$1" = "close" ]; then
+pkill openocd
+fi
+if [ "$1" = "all" ]; then
+  openocd -f interface/stlink.cfg -f target/stm32h7x.cfg &
+  arm-none-eabi-gdb ./build/loom_tester.elf -ex "target extended-remote localhost:3333" && pkill openocd
+fi

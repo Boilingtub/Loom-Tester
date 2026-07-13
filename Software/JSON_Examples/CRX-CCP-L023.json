@@ -1,0 +1,704 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "Power to external circuit breakers",
+        "description": "Connects CN3 of CRX-CB-PS03_2 to the respective circuit breakers",
+        "part_number": "CRX-CCP-L023",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/05",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "Power to external circuit breakers",
+        "part_number_data": "CRX-CCP-L023",
+        "description_block_data": "Connects CN3 of CRX-CB-PS03_2 to the respective circuit breakers",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/05"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/05",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::ca3102e12s-3s-b-f80": "Cannon",
+          "connector::430251008": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem",
+          "contact::031-8555-110": "ITT Cannon, LLC",
+          "connector::ca3102e 12s-3 sb f80": "ITT Cannon, LLC",
+          "connector::430250608": "Molex",
+          "connector::534-216": "RS Components"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.07547844040339871,
+            0.515911617565314,
+            0.4086099420312873
+          ]
+        },
+        "bill_of_materials_summary": {
+          "column_fractions": [
+            0.06516020805209241,
+            0.10907845628523781,
+            0.17540994997220674,
+            0.1768839831652505,
+            0.08107182561740649,
+            0.3923955769078061
+          ]
+        },
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "430251008",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        132.84842526773582,
+        129.2583720821852
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4",
+        ".5",
+        ".6",
+        ".7",
+        ".8",
+        ".9",
+        ".10"
+      ],
+      "contact_count": 10,
+      "label_offset_mm": [
+        2.7649510772604917,
+        -5.665197758785049
+      ]
+    },
+    {
+      "id": "L1",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.53988221686943,
+        105.31233113439437
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L2",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.7413532959566,
+        84.056631510667
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L3",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        47.6740255031406,
+        59.98746047431514
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L4",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        47.75913954501072,
+        41.04203095828745
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L5",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        48.03239846150486,
+        22.52465233881415
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L6",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        133.49257023699198,
+        60.70779703667355
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L7",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        133.482165891841,
+        40.92553172757625
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "L8",
+      "part_number": "534-216",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        133.37415345360697,
+        21.129707630303418
+      ],
+      "contacts": [],
+      "contact_suffixes": [],
+      "contact_count": 0
+    },
+    {
+      "id": "P2",
+      "part_number": "430250208",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        69.75378055958836,
+        159.92905782893945
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2"
+      ],
+      "contact_count": 2
+    },
+    {
+      "id": "P3",
+      "part_number": "430250608",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        211.61326090578706,
+        120.35046086410836
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4",
+        ".5",
+        ".6"
+      ],
+      "contact_count": 6
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.1",
+      "to_type": "connector",
+      "to_id": "L1",
+      "wire_id": "W1+",
+      "length": "350 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.2",
+      "to_type": "connector",
+      "to_id": "L2",
+      "wire_id": "W2+",
+      "length": "350 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.4",
+      "to_type": "connector",
+      "to_id": "L4",
+      "wire_id": "W4+",
+      "length": "370 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.5",
+      "to_type": "connector",
+      "to_id": "L5",
+      "wire_id": "W5+",
+      "length": "370 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.8",
+      "to_type": "contact",
+      "to_id": "P3.1",
+      "wire_id": "W3-",
+      "length": ""
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.9",
+      "to_type": "contact",
+      "to_id": "P3.2",
+      "wire_id": "W4-",
+      "length": ""
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.10",
+      "to_type": "contact",
+      "to_id": "P3.3",
+      "wire_id": "W5-",
+      "length": ""
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.6",
+      "to_type": "contact",
+      "to_id": "P2.1",
+      "wire_id": "W1-",
+      "length": "350 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.7",
+      "to_type": "contact",
+      "to_id": "P2.2",
+      "wire_id": "W2-",
+      "length": "350 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P3.4",
+      "to_type": "connector",
+      "to_id": "L6",
+      "wire_id": "W6+",
+      "length": ""
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P3.5",
+      "to_type": "connector",
+      "to_id": "L7",
+      "wire_id": "W7+",
+      "length": ""
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P3.6",
+      "to_type": "connector",
+      "to_id": "L8",
+      "wire_id": "W8+",
+      "length": ""
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.3",
+      "to_type": "connector",
+      "to_id": "L3",
+      "wire_id": "W3+",
+      "length": "370 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_in1",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_in1",
+      "twisted_with": ""
+    },
+    {
+      "id": "W1-",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V-",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2-",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V-",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_in2",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_in2",
+      "twisted_with": ""
+    },
+    {
+      "id": "W5+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_in2",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3-",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V-",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4-",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V-",
+      "twisted_with": ""
+    },
+    {
+      "id": "W5-",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V-",
+      "twisted_with": ""
+    },
+    {
+      "id": "W6+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_out2",
+      "twisted_with": ""
+    },
+    {
+      "id": "W7+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_out2",
+      "twisted_with": ""
+    },
+    {
+      "id": "W8+",
+      "length": "",
+      "size": "55A011-20-9",
+      "color": "",
+      "note": "28V+_out2",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "17bedd50e4d142bca1f65616b27de1cf",
+      "number": "1",
+      "description": "Connect to CN3 of CRX-CB-PS03_2",
+      "relations": "P1",
+      "visible": true,
+      "position_mm": [
+        154.27668368450216,
+        158.29057818661806
+      ]
+    },
+    {
+      "id": "e2baadef134c452b9a93f23e952004c4",
+      "number": "2",
+      "description": "Connect to the first 15A circuit breaker as inputs",
+      "relations": "L1, L2",
+      "visible": true,
+      "position_mm": [
+        18.078383751336425,
+        92.9016276640605
+      ]
+    },
+    {
+      "id": "c0d639a89e9a4af2bec3beb9fbd9d568",
+      "number": "3",
+      "description": "Connect to the second (middle) 15A circuit breaker as inputs",
+      "relations": "L3, L4, L5",
+      "visible": true,
+      "position_mm": [
+        16.20673896418053,
+        41.88444698119932
+      ]
+    },
+    {
+      "id": "fb7b9475040344ae93ced634ea4f049c",
+      "number": "4",
+      "description": "Connect to the second (middle) 15A circuit breaker as outputs",
+      "relations": "L6, L7, L8",
+      "visible": true,
+      "position_mm": [
+        101.96002283079385,
+        38.768893962398636
+      ]
+    },
+    {
+      "id": "09ce618be5d04be58c1a895cd6d8efb3",
+      "number": "5",
+      "description": "Connect to CN21 of CRX-CB-CCP03",
+      "relations": "P3",
+      "visible": true,
+      "position_mm": [
+        263.2654674033237,
+        119.7732724512164
+      ]
+    },
+    {
+      "id": "7af4cf81c06345b48ef2b44ad631c5a0",
+      "number": "6",
+      "description": "Wire size 20AWG",
+      "relations": "W1+, W2+, W3+, W4+, W5+, W6+, W7+, W8+, W9+, W10+, W1-, W2-, W3-, W4-, W5-",
+      "visible": true,
+      "position_mm": [
+        140.6347560317262,
+        98.71367563129408
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_2",
+      "source": "images/430251008_90.jpg",
+      "page": "schematic",
+      "position_mm": [
+        130.70033011099028,
+        140.16981255108334
+      ],
+      "size_mm": [
+        21.894132653061227,
+        40.0952790754856
+      ]
+    },
+    {
+      "id": "image_3",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        24.743858861126174,
+        14.74617875761292
+      ],
+      "size_mm": [
+        22.165856765988448,
+        22.165856765988448
+      ]
+    },
+    {
+      "id": "image_4",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        24.300231965391323,
+        34.090461943832466
+      ],
+      "size_mm": [
+        22.165856765988448,
+        22.165856765988448
+      ]
+    },
+    {
+      "id": "image_5",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        23.84890438237655,
+        52.634613670118405
+      ],
+      "size_mm": [
+        22.165856765988448,
+        22.165856765988448
+      ]
+    },
+    {
+      "id": "image_6",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.095895516117842,
+        76.09950869905893
+      ],
+      "size_mm": [
+        22.165856765988448,
+        22.165856765988448
+      ]
+    },
+    {
+      "id": "image_7",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        25.100738282250134,
+        97.97830381215496
+      ],
+      "size_mm": [
+        22.165856765988448,
+        22.165856765988448
+      ]
+    },
+    {
+      "id": "image_8",
+      "source": "images/430250608.jpg",
+      "page": "schematic",
+      "position_mm": [
+        222.15125371531477,
+        116.44455255430356
+      ],
+      "size_mm": [
+        40.0,
+        15.128205128205128
+      ]
+    },
+    {
+      "id": "image_9",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        109.80190655792673,
+        32.486205652049584
+      ],
+      "size_mm": [
+        21.482579311949316,
+        21.482579311949316
+      ]
+    },
+    {
+      "id": "image_10",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        109.1547280636405,
+        52.85458428837816
+      ],
+      "size_mm": [
+        22.8076525248433,
+        22.8076525248433
+      ]
+    },
+    {
+      "id": "image_11",
+      "source": "images/lug.png",
+      "page": "schematic",
+      "position_mm": [
+        108.83940727930448,
+        13.606223522280256
+      ],
+      "size_mm": [
+        22.047246815208343,
+        22.047246815208343
+      ]
+    }
+  ],
+  "connection_label_offsets": {
+    "connector:L3|contact:P1.3": [
+      -13.411692774273696,
+      -3.788558995176425
+    ],
+    "connector:L4|contact:P1.4": [
+      -22.986968770366932,
+      -16.332593577673467
+    ],
+    "connector:L5|contact:P1.5": [
+      0.15975727311153565,
+      -7.479721896399017
+    ]
+  },
+  "preferences": {},
+  "wire_settings": {}
+}

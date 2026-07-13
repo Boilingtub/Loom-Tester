@@ -1,0 +1,408 @@
+{
+  "documents": {
+    "default": {
+      "meta": {
+        "name": "Default Document",
+        "title": "External smokes and main firing lines",
+        "description": "Connects CN9 of CRX-CB-CCP04 to the external smokes connector",
+        "part_number": "CRX-CCP-L024",
+        "revision": "A",
+        "drawn_by": "HJ le Roux",
+        "drawn_date": "2026/06/08",
+        "reviewed_by": "",
+        "reviewed_date": "",
+        "approved_by": "",
+        "approved_date": ""
+      },
+      "field_values": {
+        "title_block_data": "External smokes and main firing lines",
+        "description_block_data": "Connects CN9 of CRX-CB-CCP04 to the external smokes connector",
+        "part_number_data": "CRX-CCP-L024",
+        "drawn_by_name_cell": "HJ le Roux",
+        "drawn_by_date_cell": "2026/06/08"
+      },
+      "revisions": [
+        {
+          "revision": "A",
+          "date": "2026/06/08",
+          "author": "HJ le Roux",
+          "description": "Initial concept"
+        }
+      ],
+      "bill_of_materials": {
+        "custom_entries": [],
+        "visibility_overrides": {},
+        "manufacturer_overrides": {
+          "connector::ca3102e20-27s": "Cannon",
+          "contact::031-8556-110": "ITT Cannon, LLC",
+          "connector::430251208": "Molex",
+          "contact::43030-0001": "Molex",
+          "wire::55a011-20-9": "TE Connectivity Raychem"
+        }
+      },
+      "table_settings": {
+        "revisions_summary": {},
+        "notes_summary": {
+          "column_fractions": [
+            0.06127034581027017,
+            0.3506877842933084,
+            0.5880418698964214
+          ]
+        },
+        "bill_of_materials_summary": {
+          "column_fractions": [
+            0.0523921740560092,
+            0.09913958458924754,
+            0.17608373979284273,
+            0.13021318572916096,
+            0.09322080341974015,
+            0.44895051241299944
+          ]
+        },
+        "wiring_summary": {},
+        "shielding_summary": {}
+      }
+    }
+  },
+  "active_document": "default",
+  "connectors": [
+    {
+      "id": "P1",
+      "part_number": "CA3102E20-27S",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        65.36619718309858,
+        105.78873239436616
+      ],
+      "contacts": [
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "031-8556-110",
+        "",
+        ""
+      ],
+      "contact_suffixes": [
+        ".A",
+        ".B",
+        ".C",
+        ".D",
+        ".E",
+        ".F",
+        ".G",
+        ".H",
+        ".I",
+        ".J",
+        ".K",
+        ".L",
+        ".M",
+        ".N"
+      ],
+      "contact_count": 14
+    },
+    {
+      "id": "P2",
+      "part_number": "430251208",
+      "backshell": "",
+      "boot": "",
+      "custom_part": "",
+      "position_mm": [
+        209.3943661971831,
+        105.78873239436619
+      ],
+      "contacts": [
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001",
+        "43030-0001"
+      ],
+      "contact_suffixes": [
+        ".1",
+        ".2",
+        ".3",
+        ".4",
+        ".5",
+        ".6",
+        ".7",
+        ".8",
+        ".9",
+        ".10",
+        ".11",
+        ".12"
+      ],
+      "contact_count": 12
+    }
+  ],
+  "junctions": [],
+  "splices": [],
+  "connections": [
+    {
+      "from_type": "contact",
+      "from_id": "P1.A",
+      "to_type": "contact",
+      "to_id": "P2.6",
+      "wire_id": "W6",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.B",
+      "to_type": "contact",
+      "to_id": "P2.5",
+      "wire_id": "W5",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.C",
+      "to_type": "contact",
+      "to_id": "P2.4",
+      "wire_id": "W4",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.D",
+      "to_type": "contact",
+      "to_id": "P2.3",
+      "wire_id": "W3",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.E",
+      "to_type": "contact",
+      "to_id": "P2.2",
+      "wire_id": "W2",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.F",
+      "to_type": "contact",
+      "to_id": "P2.1",
+      "wire_id": "W1",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.G",
+      "to_type": "contact",
+      "to_id": "P2.7",
+      "wire_id": "W7",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.H",
+      "to_type": "contact",
+      "to_id": "P2.8",
+      "wire_id": "W8",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.I",
+      "to_type": "contact",
+      "to_id": "P2.9",
+      "wire_id": "W9",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.J",
+      "to_type": "contact",
+      "to_id": "P2.12",
+      "wire_id": "W12",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.K",
+      "to_type": "contact",
+      "to_id": "P2.10",
+      "wire_id": "W10",
+      "length": "50 mm"
+    },
+    {
+      "from_type": "contact",
+      "from_id": "P1.L",
+      "to_type": "contact",
+      "to_id": "P2.11",
+      "wire_id": "W11",
+      "length": "50 mm"
+    }
+  ],
+  "shieldings": [],
+  "wires": [
+    {
+      "id": "W1",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL2_2",
+      "twisted_with": ""
+    },
+    {
+      "id": "W2",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL2_1",
+      "twisted_with": ""
+    },
+    {
+      "id": "W3",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL1_4",
+      "twisted_with": ""
+    },
+    {
+      "id": "W4",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL1_3",
+      "twisted_with": ""
+    },
+    {
+      "id": "W5",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL1_2",
+      "twisted_with": ""
+    },
+    {
+      "id": "W6",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL1_1",
+      "twisted_with": ""
+    },
+    {
+      "id": "W7",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL2_3",
+      "twisted_with": ""
+    },
+    {
+      "id": "W8",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "SL2_4",
+      "twisted_with": ""
+    },
+    {
+      "id": "W9",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "GND",
+      "twisted_with": ""
+    },
+    {
+      "id": "W10",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "GND",
+      "twisted_with": ""
+    },
+    {
+      "id": "W11",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "Gun_ready",
+      "twisted_with": ""
+    },
+    {
+      "id": "W12",
+      "length": "",
+      "size": "55A011-16-9",
+      "color": "",
+      "note": "Gun_Fire",
+      "twisted_with": ""
+    }
+  ],
+  "notes": [
+    {
+      "id": "0d5c3eed47544219aa85f87e12098c44",
+      "number": "1",
+      "description": "Connect to CN9 of CRX-CB-CCP04",
+      "relations": "P2",
+      "visible": true,
+      "position_mm": [
+        250.943661971831,
+        127.52112676056338
+      ]
+    },
+    {
+      "id": "84feaec367e14e7b86e0bb2cc92d3815",
+      "number": "2",
+      "description": "Wire size 16AWG",
+      "relations": "W1, W2, W3, W4, W5, W6, W7, W8, W9, W10, W11, W12",
+      "visible": true,
+      "position_mm": [
+        137.1408450704225,
+        97.0985915492958
+      ]
+    }
+  ],
+  "schematic_images": [
+    {
+      "id": "image_1",
+      "source": "images/20-27.png",
+      "page": "schematic",
+      "position_mm": [
+        20.119718309859156,
+        91.02925243770315
+      ],
+      "size_mm": [
+        40.0,
+        36.30769230769231
+      ]
+    },
+    {
+      "id": "image_2",
+      "source": "images/430251208.jpg",
+      "page": "schematic",
+      "position_mm": [
+        218.6267605633803,
+        91.1884791897452
+      ],
+      "size_mm": [
+        60.50000000000001,
+        36.02808988764046
+      ]
+    }
+  ],
+  "connection_label_offsets": {},
+  "preferences": {},
+  "wire_settings": {}
+}
