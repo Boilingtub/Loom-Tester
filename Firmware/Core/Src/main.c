@@ -147,9 +147,9 @@ Pin Pins[GPIO_PINS_Len] = {
 };
 
 uint8_t Output_Pins_len = 0;
-Pin Output_Pins[64];
+Pin Output_Pins[GPIO_PINS_Len ];
 uint8_t Input_Pins_len = 0;
-Pin Input_Pins[64];
+Pin Input_Pins[GPIO_PINS_Len];
 
 #define RX3_BUF_SIZE 256
 //uint8_t* rx3_buf = (uint8_t*)0x30000000;
@@ -218,8 +218,10 @@ int apply_pin_config(uint8_t* confptr, uint8_t len, bool append) {
     #endif
     return 1;
   }
-  char conn_unit[4] = "";
-  conn_msg[0] = '\0';
+  #ifdef Debug 
+    char conn_unit[4] = "";
+    conn_msg[0] = '\0';
+  #endif /* if  */
   uint8_t output_count = confptr[0];
 
   if (!append) {
@@ -258,7 +260,9 @@ int apply_pin_config(uint8_t* confptr, uint8_t len, bool append) {
     #endif /* ifdef  DEBUG */
     Input_Pins_len++;
   }
-  strcat((char*)conn_msg, "\n");
+  #ifdef Debug
+    strcat((char*)conn_msg, "\n");
+  #endif /* ifdef Debug */
   #ifdef Debug
     do_Tx(&huart3, conn_msg, strlen((char*)conn_msg));
   #endif

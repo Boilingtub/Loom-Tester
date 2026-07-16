@@ -43,9 +43,14 @@ def do_conf(port_name:str, conf:list[int]):
     print(p)
     return com
 
+def do_conf_all(port_name, pin_max):
+    return
+
+
 def do_cont(com:Serial, cont:list[int]):
     com.write(b"  cont\n")
-    _ = com.read_until(b"ACK").decode()
+    _ = com.read_until(b"cont ACK").decode()
+    _ = com.read_until(b"conf ACK").decode()
 
     com.write(bytes(cont))
     _ = com.read_until(b"ACK").decode()

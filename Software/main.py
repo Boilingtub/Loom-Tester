@@ -1,4 +1,5 @@
 from glob import glob
+from re import sub
 import tkinter as tk 
 from tkinter import BOTH, ttk
 from tkinter import filedialog
@@ -27,10 +28,10 @@ lug_line_width = 8
 lug_dot_size = 20
 lug_last_x = 0
 
-working_loom:loom.Loom
+working_loom:loom.Loom = loom.Loom()
 canvas:tk.Canvas 
 txt_info:tk.Text
-port_name:str
+port_name:str = ""
 
 def reset_canvas():
     global canvas
@@ -147,7 +148,7 @@ def main():
     #                      wraplength=100)
 
     btn_go = tk.Button(root,
-                         text="Go",
+                         text="Check JSON",
                          command=test_loom,
                          activebackground="blue",
                          activeforeground="lightgray",
@@ -166,8 +167,31 @@ def main():
                          overrelief="raised",
                          padx=2,
                          pady=1,
-                         width=5,
+                         width=10,
                          wraplength=100)
+
+    btn_dry = tk.Button(root,
+                         text="Check All",
+                         command=dry_check,
+                         activebackground="blue",
+                         activeforeground="lightgray",
+                         anchor="center",
+                         bd=3,
+                         bg="white",
+                         cursor="hand2",
+                         disabledforeground="gray",
+                         fg="black",
+                         font=("Arial, 11"),
+                         height=1,
+                         highlightbackground="black",
+                         highlightcolor="green",
+                         highlightthickness=2,
+                         justify="center",
+                         overrelief="raised",
+                         padx=2,
+                         pady=1,
+                         width=9,
+                         wraplength=120)
 
 
     width = ((board_pad_x*((board_line_width+1)+(lug_line_width))+(lug_dot_size*lug_line_width+board_pad_x)+board_dot_size))
@@ -187,6 +211,7 @@ def main():
     cb_serial.pack(in_=frm_top, padx=5, pady=5, anchor='nw', side="left")
     #btn_coms_test.pack(in_=frm_top, padx=5,pady=5,anchor="nw",side="left")
     btn_go.pack(in_=frm_top, padx=5,pady=5,anchor="nw",side="left")
+    btn_dry.pack(in_=frm_top, padx=5,pady=5,anchor="nw",side="left")
     canvas.pack(padx=5,pady=5, anchor='w')
     txt_info.pack(padx=5,pady=5, anchor='w', expand=1, fill=BOTH)
 
@@ -341,6 +366,14 @@ def assign_molex(width:int, height:int, con:loom.Connector, x_offset:int, y_offs
 
 def test_loom():
     global working_loom
+    global txt_info
+    global port_name
+    if (port_name == ""):
+        txt_info.insert(tk.END, "No serial port selected !, Please select a port and try again.\n")
+        return
+    if (len(working_loom.connectors.values()) == 0):
+        txt_info.insert(tk.END, "Invalid or no JSON file loaded !, Please select a valid JSON file and try again.\n")
+        return
     serial_outputs: list[int] = []
     output_contacts: list[loom.Contact] = []
     input_contacts: list[loom.Contact] = []
@@ -358,14 +391,12 @@ def test_loom():
     conf_serial.extend(serial_outputs)
     conf_serial.extend(serial_inputs)
     #print(conf_serial)
-    global port_name
     com = coms.do_conf(port_name, conf_serial)
     results = coms.do_go(com)
     check_test_results(results, output_contacts, input_contacts)
     return
 
-def check_test_results(results:str, output_contacts:list[loom.Contact], input_contacts:list[loom.Contact]):
-    print(results)
+def decode_results(results:str):
     decode_results: list[list[int]] = []
     global txt_info
     res1 = results.split("\n")
@@ -376,12 +407,21 @@ def check_test_results(results:str, output_contacts:list[loom.Contact], input_co
             if ',' in r:
                 ins = [element for element in res2[1].split(",") if "" != element]
                 decode_results[len(decode_results)-1].extend(list(map(int,ins)))
+    return decode_results
+
+def check_test_results(results:str, output_contacts:list[loom.Contact], input_contacts:list[loom.Contact]):
+    print(results)
+    dec_res: list[list[int]] = decode_results(results)
+
 
     break_str = "-"*50
     txt_info.insert(tk.END,break_str + "\n")
+    global working_loom
+    txt_info.insert(tk.END, f"Testing: {working_loom.part_number}-rev-{working_loom.revision}\n")
+    txt_info.insert(tk.END,break_str + "\n")
 
     for i,c1 in enumerate(output_contacts):
-        if c1.pin_num != decode_results[i][0]:
+        if c1.pin_num != dec_res[i][0]:
             print("Warning Transmission order different, possible transmission data corruption")
         conf: list[int] = []
         conf_data: list[str] = []
@@ -390,7 +430,7 @@ def check_test_results(results:str, output_contacts:list[loom.Contact], input_co
             conf.append(c2.contact.pin_num)
             conf_data.append(c2.connector.id + c2.contact.id)
 
-        meas: list[int] = decode_results[i][1:] 
+        meas: list[int] = dec_res[i][1:] 
         color:str = ""
         output_str:str = ""
 
@@ -426,6 +466,77 @@ def check_test_results(results:str, output_contacts:list[loom.Contact], input_co
         txt_info.see("end")
         #print(output_str)
 
+
+    txt_info.insert(tk.END,"\n");
+    text_lines_count = int(txt_info.index('end-1c').split('.')[0])-1
+    txt_info.tag_add("res-"+str(text_lines_count),str(text_lines_count)+".0",'end')
+    txt_info.tag_config("res-"+str(text_lines_count), foreground="black")
     return
+
+def create_segmented_conf(total, pin_div):  
+    sub_div =  int(total / pin_div)
+    last_div = total - (pin_div *sub_div)
+    conf_serial:list[list[int]] = []
+    i = 0
+
+    for x in range(sub_div):
+        conf_serial.append([0xFF,0xFF,pin_div]) 
+        def_len = len(conf_serial[len(conf_serial)-1])
+        for _ in range(pin_div):
+            val = (len(conf_serial[len(conf_serial)-1])-def_len+pin_div*x)
+            conf_serial[len(conf_serial)-1].append(val)
+            i=i+1
+        conf_serial[len(conf_serial)-1].append(0)
+
+
+
+    conf_serial.append([0xFF,0XFF,last_div])
+    def_len = len(conf_serial[len(conf_serial)-1])-i
+    for _ in range(last_div):
+        conf_serial[len(conf_serial)-1].append(len(conf_serial[len(conf_serial)-1])-def_len)
+
+    conf_serial[len(conf_serial)-1].append(0)
+
+    return conf_serial
+
+
+
+def dry_check():
+    global port_name
+    if (port_name == ""):
+        txt_info.insert(tk.END, "No serial port selected !, Please select a port and try again.\n")
+        return
+    total = lug_lines*lug_line_height*lug_line_width + board_lines*board_line_height*board_line_width
+    pin_div = 29
+    conf_serial = create_segmented_conf(total, pin_div)
+    #print(conf_serial)
+        
+    com = coms.do_conf(port_name, conf_serial[0])
+    for x in range(len(conf_serial)-1):
+        coms.do_cont(com,conf_serial[1+x])
+    results = coms.do_go(com)
+    #print(results)
+    display_dry_results(results)
+
+def display_dry_results(res:str):
+    dec_res = decode_results(res)
+    break_str = "-"*50
+    txt_info.insert(tk.END,break_str + "\n")
+    txt_info.insert(tk.END, "Running generic check\n")
+    txt_info.insert(tk.END,break_str + "\n")
+    disp_done = []
+    empty = True
+    for d in dec_res:
+        if (d[0] not in disp_done) and (len(d) > 1):
+            txt_info.insert(tk.END, f"{d[0]} connected to {d[1:]}" + "\n")
+            disp_done.extend(d[1:])
+            empty = False
+    if empty == True:
+        txt_info.insert(tk.END, "No pins are connected" + "\n")
+        
+
+    txt_info.see("end")
+    return
+
 
 main()
