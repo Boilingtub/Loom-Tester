@@ -28,12 +28,12 @@ def list_serial_devices():
     
 
 def open_serial(port_name:str):
-    com = serial.Serial(port_name, 115200, timeout=1)
+    com = serial.Serial(port_name, 115200, timeout=0.2)
     return com
 
 
 def do_conf(port_name:str, conf:list[int]):
-    com = serial.Serial(port_name, 115200, timeout=1)
+    com = serial.Serial(port_name, 115200, timeout=0.2)
 
     com.write(b"  conf\n")
     p = com.read_until(b"ACK").decode()
@@ -66,7 +66,7 @@ def do_go(com:Serial):
 
     
 def diagnostic_test(port_name:str):
-    com = serial.Serial(port_name, 115200, timeout=1)
+    com = serial.Serial(port_name, 115200, timeout=0.2)
     print("Sending : \"  abc\"")
     com.write(b"  abc\n")
     data = com.read_until(b"ACK").decode()

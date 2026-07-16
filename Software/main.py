@@ -215,6 +215,12 @@ def main():
     canvas.pack(padx=5,pady=5, anchor='w')
     txt_info.pack(padx=5,pady=5, anchor='w', expand=1, fill=BOTH)
 
+    if len(serial_devices)==1:
+        cb_serial.set(serial_devices[0])
+        choose_serial(cb_serial.get(), entry=cb_serial.get())
+    else:
+        cb_serial.set("Serial Port")
+
 
 
     root.mainloop()
